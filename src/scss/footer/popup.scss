@@ -8,6 +8,22 @@
 	height: 100%;
 	z-index: 200;
 	overflow-y: auto;
+	display: none;
+
+	&.showed {
+		display: block;
+		animation: show 1s ease forwards;
+
+		@keyframes show {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 .form {
@@ -97,9 +113,7 @@
 
 .close-button {
 	cursor: pointer;
-	position: absolute;
-	right: 115px;
-	top: 49px;
+	position: relative;
 	border: 0;
 	border-style: none;
 	background-color: transparent;
@@ -127,5 +141,10 @@
 
 	&:hover {
 		opacity: $op;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: flex-end;
 	}
 }

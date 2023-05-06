@@ -4,20 +4,23 @@ h1, .h1 {
 	line-height: $lh-title;
 	text-align: center;
 	margin: 0;
-	padding: 0 50px;
+	
 }
 
 h1, .h1 {
-	font-family: 'Exo 2';
+	font-family: $ff;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 64px;
-	line-height: 77px;
+	line-height: 25px;
 	color: $white;
-	font-size: 32px;
+	font-size: 21px;
+	// padding: 0 10px;
 
 	@media all and (min-width: $lg) {
-		font-size: 64px
+		font-size: 64px;
+		line-height: 77px;
+		padding: 0 50px;
 	}
 }
 

@@ -2,6 +2,7 @@ h1, .h1 {
 	font-family: $ff;
 	font-weight: $fw-bold;
 	line-height: $lh-title;
+	text-align: center;
 	margin: 0;
 }
 
@@ -9,7 +10,7 @@ h1, .h1 {
 	font-size: 32px;
 
 	@media all and (min-width: $lg) {
-		font-size: 36px
+		font-size: 64px
 	}
 }
 

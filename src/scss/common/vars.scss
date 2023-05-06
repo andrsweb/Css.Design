@@ -15,26 +15,24 @@ $container-xl: 1200px;
 $container-padding: 24px;
 
 // Font families.
-$ff			: Arial, sans-serif;
-$ff-title	: Arial, sans-serif;
+$ff			: 'Exo 2', sans-serif;
 
 // Font sizes.
 $fs-xs	: 12px;
 $fs-sm	: 14px;
 $fs-md	: 16px;
-$fs-lg	: 18px;
-$fs-xl	: 20px;
+$fs-lg	: 21px;
+$fs-xl	: 28px;
 
 // Font weights.
-$fw-light	: 300;
 $fw-regular	: 400;
 $fw-medium	: 500;
 $fw-semibold: 600;
 $fw-bold	: 700;
 
 // Line heights.
-$lh			: 1.5;
-$lh-title	: 1.3;
+$lh			: 34px;
+$lh-title	: 77px;
 
 // Colors.
 $white	: #FFFFFF;
@@ -42,3 +40,4 @@ $black	: #000000;
 
 // Others.
 $tr: 0.35s;
+$op: 0.75;

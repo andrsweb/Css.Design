@@ -4,9 +4,16 @@ h1, .h1 {
 	line-height: $lh-title;
 	text-align: center;
 	margin: 0;
+	padding: 0 50px;
 }
 
 h1, .h1 {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77px;
+	color: $white;
 	font-size: 32px;
 
 	@media all and (min-width: $lg) {

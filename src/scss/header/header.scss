@@ -1,5 +1,5 @@
 .header {
-	padding: 60px 0 120px;
+	padding: 55px 0 90px;
 
 	&-wrapper {
 		display: flex;
@@ -7,7 +7,9 @@
 		align-items: center;
 	}
 
-
+	&-logo {
+		max-width: 186px;
+	}
 
 	&-desc {
 		display: flex;
@@ -18,11 +20,24 @@
 			font-family: $ff;
 			font-style: normal;
 			font-weight: 600;
-			font-size: 24px;
-			line-height: 32px;
+			font-size: 12px;
+			line-height: 16px;
 			text-align: center;
 			text-transform: uppercase;
 			color: $white;
 		}
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			line-height: 32px;
+
+			.desc-br {
+				display: none;
+			}
+		}
+	}
+
+	@media all and (min-width: $xl) {
+		padding: 60px 0 120px;
 	}
 }

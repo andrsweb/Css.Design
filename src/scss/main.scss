@@ -1,0 +1,15 @@
+// Defaults styles.
+@import 'common/fonts';
+@import 'common/vars';
+@import 'common/typography';
+@import 'common/grid';
+@import 'common/base';
+
+// Header styles.
+@import 'header/header';
+
+// Footer styles.
+@import 'footer/footer';
+
+// Home page sections styles.
+@import 'sections/home/hero';

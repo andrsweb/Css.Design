@@ -1,0 +1,46 @@
+* {
+	outline: none;
+	box-sizing: border-box
+}
+
+body, html {
+	height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	margin: 0
+}
+
+body {
+	position: relative;
+	min-width: 300px;
+	display: flex;
+	height: auto;
+	font-family: $ff;
+	font-size: $fs-md;
+	line-height: $lh;
+	color: $black;
+	background-color: $white
+}
+
+img {
+	max-width: 100%;
+	height: auto
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+
+	.footer {
+		margin-top: auto
+	}
+}

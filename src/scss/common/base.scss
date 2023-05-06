@@ -18,16 +18,13 @@ body {
 	font-size: $fs-md;
 	line-height: $lh;
 	color: $black;
-	background-color: $black
+	background-color: grey
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
-}
-
-picture {
-	display: block;
 }
 
 ul {

@@ -1,0 +1,131 @@
+.popup-wrapper {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	max-width: 746px;
+	background-color: $black;
+	height: 100%;
+	z-index: 200;
+	overflow-y: auto;
+}
+
+.form {
+	position: relative;
+	width: 100%;
+	margin: auto 0;
+	padding: 40px 125px 20px 125px;
+
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		border: 0;
+	}
+	
+	legend {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 32px;
+		line-height: 38px;
+		color: $white;
+		margin-bottom: 118px;
+	}
+
+	input {
+		border: 0;
+		border-bottom: 1px solid $white;
+		background-color: transparent;
+		width: 100%;
+		max-width: 536px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 28px;
+		line-height: 34px;
+		color: $white;
+		padding-left: 5px;
+		margin-bottom: 80px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::placeholder {
+			opacity: 1;
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-medium;
+			font-size: 28px;
+			line-height: 34px;
+			color: $white;
+		}
+	}
+
+	textarea {
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 20px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 28px;
+		line-height: 34px;
+		color: rgba(255, 255, 255, 0.4);
+		border-style: none;
+		resize: none;
+		width: 100%;
+		max-width: 534px;
+		min-height: 210px;
+		padding: 5px 0 0 5px;
+
+		&::placeholder {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-medium;
+			font-size: 28px;
+			line-height: 34px;
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+
+	&-button-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 55px;
+	}
+}
+
+.close-button {
+	cursor: pointer;
+	position: absolute;
+	right: 115px;
+	top: 49px;
+	border: 0;
+	border-style: none;
+	background-color: transparent;
+	width: 52px;
+	height: 52px;
+	padding: 0;
+	transition: opacity ease $tr;
+
+	span {
+			display: block;
+			width: 100%;
+			height: 5px;
+			background: $white;
+			transform: rotate( 45deg );
+
+			&::before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 5px;
+				background: $white;
+				transform: rotate( -90deg );
+			}
+	}
+
+	&:hover {
+		opacity: $op;
+	}
+}

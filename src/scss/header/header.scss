@@ -1,5 +1,5 @@
 .header {
-	padding: 55px 0 90px;
+	padding: 55px 0;
 
 	&-wrapper {
 		display: flex;
@@ -9,6 +9,10 @@
 
 	&-logo {
 		max-width: 186px;
+
+		@media all and (min-width: $lg) {
+			max-width: 377px;
+		}
 	}
 
 	&-desc {
@@ -17,14 +21,19 @@
 		margin-top: 18px;
 
 		strong {
-			font-family: $ff;
+			font-family: $ff-title;
 			font-style: normal;
-			font-weight: 600;
+			font-weight: $fw-semibold;
 			font-size: 12px;
 			line-height: 16px;
 			text-align: center;
 			text-transform: uppercase;
 			color: $white;
+
+			@media all and (min-width: $lg) {
+				font-size: 24px;
+				line-height: 32px;
+			}
 		}
 
 		@media all and (min-width: $lg) {
@@ -38,6 +47,6 @@
 	}
 
 	@media all and (min-width: $xl) {
-		padding: 60px 0 120px;
+		padding: 60px 0;
 	}
 }

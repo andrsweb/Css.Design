@@ -15,7 +15,6 @@ h1, .h1 {
 	line-height: 25px;
 	color: $white;
 	font-size: 21px;
-	// padding: 0 10px;
 
 	@media all and (min-width: $lg) {
 		font-size: 64px;
@@ -27,7 +26,7 @@ h1, .h1 {
 a {
 	display: inline-block;
 	text-decoration: none;
-	transition: color ease-out $tr;
+	transition: opacity ease-out $tr;
 
 	&:hover {
 		opacity: $op;

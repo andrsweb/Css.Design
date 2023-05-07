@@ -3,7 +3,10 @@
 	width: 100%;
 	height: 100%;
 
-	.desktop-bg1, .desktop-bg2, .desktop-bg3, .desktop-bg4 {
+	.desktop-bg1, .desktop-bg2, .desktop-bg3, .desktop-bg4, .mobile-bg1,
+	.mobile-bg2, .mobile-bg3, .mobile-bg4, .tablet-bg1, .tablet-bg2,
+	.tablet-bg3, .tablet-bg4  {
+		display: none;
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -12,7 +15,33 @@
 		object-fit: cover;
 	}
 
-	.desktop-bg1 {
+	.mobile-bg1, .mobile-bg2, .mobile-bg3, .mobile-bg4 {
+		@media all and (min-width: $xs) {
+				display: block;
+		}
+
+		@media all and (min-width: $md) {
+			display: none;
+		}
+	}
+
+	.tablet-bg1, .tablet-bg2, .tablet-bg3, .tablet-bg4 {
+		@media all and (min-width: $md) {
+				display: block;
+		}
+
+		@media all and (min-width: $xl) {
+			display: none;
+		}
+	}
+
+	.desktop-bg1, .desktop-bg2, .desktop-bg3, .desktop-bg4 {
+		@media all and (min-width: $xl) {
+				display: block;
+		}
+	}
+
+	.desktop-bg1, .mobile-bg1, .tablet-bg1 {
 		animation: fade 3s ease infinite alternate-reverse;
 
 		@keyframes fade {
@@ -26,7 +55,7 @@
 		}
 	}
 
-	.desktop-bg2 {
+	.desktop-bg2, .mobile-bg2, .tablet-bg2 {
 		animation: fade 3s ease infinite alternate-reverse 1s;
 
 		@keyframes fade {
@@ -40,7 +69,7 @@
 		}
 	}
 
-	.desktop-bg3 {
+	.desktop-bg3, .mobile-bg3, .tablet-bg3 {
 		animation: fade 3s ease infinite alternate-reverse 2s;
 
 		@keyframes fade {
@@ -54,7 +83,7 @@
 		}
 	}
 
-	.desktop-bg4 {
+	.desktop-bg4, .mobile-bg4, .tablet-bg4 {
 		animation: fade 3s ease infinite alternate-reverse 3s;
 
 		@keyframes fade {

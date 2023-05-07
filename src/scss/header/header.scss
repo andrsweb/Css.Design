@@ -1,0 +1,56 @@
+.header {
+	padding: 55px 0;
+
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&-logo {
+		max-width: 186px;
+
+		@media all and (min-width: $md) {
+			max-width: 272px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 377px;
+		}
+	}
+
+	&-desc {
+		display: flex;
+		justify-content: center;
+		margin-top: 28px;
+
+		strong {
+			font-family: $ff-title;
+			font-style: normal;
+			font-weight: $fw-semibold;
+			font-size: 12px;
+			line-height: 16px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $white;
+
+			@media all and (min-width: $lg) {
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			font-size: 24px;
+			line-height: 32px;
+
+			.desc-br {
+				display: none;
+			}
+		}
+	}
+
+	@media all and (min-width: $xl) {
+		padding: 60px 0;
+	}
+}

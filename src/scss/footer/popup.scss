@@ -1,0 +1,161 @@
+.popup-wrapper {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	max-width: 737px;
+	background-color: $black;
+	height: 100%;
+	z-index: 200;
+	overflow-y: auto;
+	display: none;
+
+	&.showed {
+		display: block;
+		animation: show 1s ease forwards;
+
+		@keyframes show {
+			0% {
+				opacity: 0;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.form {
+	position: relative;
+	width: 100%;
+	margin: auto 0;
+	padding: 25px;
+
+	@media all and (min-width: $lg) {
+		padding: 40px 80px 20px 88px;
+	}
+
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		border: 0;
+	}
+	
+	legend {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 32px;
+		line-height: 38px;
+		color: $white;
+		margin: 20px 0 118px 0;
+	}
+
+	input {
+		border: 0;
+		border-bottom: 1px solid $white;
+		background-color: transparent;
+		width: 100%;
+		max-width: 536px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 28px;
+		line-height: 34px;
+		color: $white;
+		padding-left: 5px;
+		margin-bottom: 80px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::placeholder {
+			opacity: 1;
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-medium;
+			font-size: 28px;
+			line-height: 34px;
+			color: $white;
+		}
+	}
+
+	textarea {
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 20px;
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 28px;
+		line-height: 34px;
+		color: rgba(255, 255, 255, 0.4);
+		border-style: none;
+		resize: none;
+		width: 100%;
+		max-width: 534px;
+		min-height: 210px;
+		padding: 5px 0 0 5px;
+
+		&::placeholder {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-medium;
+			font-size: 28px;
+			line-height: 34px;
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+
+	&-button-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 43px;
+	}
+}
+
+.close-button {
+	cursor: pointer;
+	position: relative;
+	border: 0;
+	border-style: none;
+	background-color: transparent;
+	width: 52px;
+	height: 52px;
+	padding: 0;
+	transition: opacity ease $tr;
+
+	span {
+			display: block;
+			width: 100%;
+			height: 5px;
+			background: $white;
+			transform: rotate( 45deg );
+
+			&::before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 5px;
+				background: $white;
+				transform: rotate( -90deg );
+			}
+	}
+
+	&:hover {
+		opacity: $op;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.success {
+	margin-top: 10px;
+	color: $white;
+	text-align: center;
+	font-size: 20px;
+}

@@ -18,10 +18,11 @@ body {
 	font-size: $fs-md;
 	line-height: $lh;
 	color: $black;
-	background-color: $white
+	background-color: $black
 }
 
 img {
+	display: block;
 	max-width: 100%;
 	height: auto
 }

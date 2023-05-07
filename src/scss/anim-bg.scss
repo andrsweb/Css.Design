@@ -2,53 +2,69 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	left: 0;
-	top: 0;
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-	animation: fadeBg 30s ease alternate-reverse infinite;
 
-	@keyframes fadeBg {
+	.desktop-bg1, .desktop-bg2, .desktop-bg3, .desktop-bg4 {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		object-fit: cover;
+	}
 
-		0% {
-			background-image: url( '../img/main/bg-desktop2.png' );
-			opacity: 0;
+	.desktop-bg1 {
+		animation: fade 3s ease infinite alternate-reverse;
+
+		@keyframes fade {
+			0% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
 		}
+	}
 
-		25% {
-			background-image: url( '../img/main/bg-desktop2.png' );
-			opacity: 1;
+	.desktop-bg2 {
+		animation: fade 3s ease infinite alternate-reverse 1s;
+
+		@keyframes fade {
+			0% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
 		}
+	}
 
-		37.5% {
-			background-image: url( '../img/main/bg-desktop3.png' );
-			opacity: 0;
+	.desktop-bg3 {
+		animation: fade 3s ease infinite alternate-reverse 2s;
+
+		@keyframes fade {
+			0% {
+				opacity: 1;
+			}
+
+			100% {
+				opacity: 0;
+			}
 		}
+	}
 
-		50% {
-			background-image: url( '../img/main/bg-desktop3.png' );
-			opacity: 1;
-		}
+	.desktop-bg4 {
+		animation: fade 3s ease infinite alternate-reverse 3s;
 
-		62.5% {
-			background-image: url( '../img/main/bg-desktop4.png' );
-			opacity: 0;
-		}
+		@keyframes fade {
+			0% {
+				opacity: 1;
+			}
 
-		75% {
-			background-image: url( '../img/main/bg-desktop4.png' );
-			opacity: 1;
-		}
-
-		85% {
-			background-image: url( '../img/main/bg-desktop1.png' );
-			opacity: 0;
-		}
-
-		100% {
-			background-image: url( '../img/main/bg-desktop1.png' );
-			opacity: 1;
+			100% {
+				opacity: 0;
+			}
 		}
 	}
 }

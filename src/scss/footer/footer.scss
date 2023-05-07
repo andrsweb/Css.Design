@@ -4,24 +4,53 @@
 	&-wrapper {
 		display: flex;
 		align-items: center;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
+
 	}
 
 	&-mail, &-phone {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 28px;
-		line-height: 34px;
+		font-size: 14px;
+		line-height: 17px;
 		text-align: center;
 		color: $white;
+
+		@media all and (min-width: $md) {
+			font-style: 20px;
+			line-height: 24px;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+
+	&-address {
+		order: 3;
+
+		@media all and (min-width: $lg) {
+			order: 1;
+		}
 	}
 
 	&-mail {
-		margin-right: 88px;
+		@media all and (min-width: $lg) {
+			margin-right: 88px;
+		}
 	}
 
 	&-phone {
-		margin-right: 87px;
+		order: 2;
+		@media all and (min-width: $lg) {
+			margin-right: 87px;
+		}
 	}
 
 	&-links {
@@ -50,7 +79,14 @@
 	}
 
 	&-contacts {
-		margin-right: 31px;
+		order: 4;
+		margin-top: 30px;
+
+		@media all and (min-width: $lg) {
+			margin-right: 31px;
+			order: 3;
+			margin-top: 0;
+		}
 	}
 }
 
@@ -62,7 +98,7 @@
 	font-family: $ff;
 	font-style: normal;
 	font-weight: $fw-medium;
-	font-size: 20px;
+	font-size: 12px;
 	line-height: 24px;
 	text-align: center;
 	color: $black;
@@ -72,5 +108,22 @@
 
 	&:hover {
 		opacity: $op;
+	}
+}
+
+.form-button {
+	order: 1;
+	margin-bottom: 50px;
+	padding: 12px 53px;
+
+	@media all and (min-width: $md) {
+		padding: 16px 28px;
+		font-size: 16px;
+	}
+
+	@media all and (min-width: $lg) {
+		font-size: 16px;
+		order: 4;
+		margin-bottom: 0;
 	}
 }

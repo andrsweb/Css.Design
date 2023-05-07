@@ -16,10 +16,14 @@ h1, .h1 {
 	color: $white;
 	font-size: 21px;
 
+	@media all and (min-width: $md) {
+		font-size: 32px;
+		line-height: 28px;
+	}
+
 	@media all and (min-width: $lg) {
 		font-size: 64px;
 		line-height: 77px;
-		padding: 0 50px;
 	}
 }
 

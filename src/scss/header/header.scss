@@ -10,6 +10,10 @@
 	&-logo {
 		max-width: 186px;
 
+		@media all and (min-width: $md) {
+			max-width: 272px;
+		}
+
 		@media all and (min-width: $lg) {
 			max-width: 377px;
 		}

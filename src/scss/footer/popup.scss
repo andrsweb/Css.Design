@@ -61,11 +61,16 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 28px;
+		font-size: 14px;
 		line-height: 34px;
 		color: $white;
 		padding-left: 5px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
+
+		@media all and (min-width: $lg) {
+			font-size: 28px;
+			margin-bottom: 80px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -76,9 +81,13 @@
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-medium;
-			font-size: 28px;
+			font-size: 14px;
 			line-height: 34px;
 			color: $white;
+
+			@media all and (min-width: $lg) {
+				font-size: 28px;
+			}
 		}
 	}
 
@@ -88,23 +97,32 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-medium;
-		font-size: 28px;
+		font-size: 14px;
 		line-height: 34px;
 		color: rgba(255, 255, 255, 0.4);
 		border-style: none;
 		resize: none;
 		width: 100%;
 		max-width: 534px;
-		min-height: 210px;
+		min-height: 100px;
 		padding: 5px 0 0 5px;
 
 		&::placeholder {
 			font-family: $ff;
 			font-style: normal;
 			font-weight: $fw-medium;
-			font-size: 28px;
+			font-size: 14px;
 			line-height: 34px;
 			color: rgba(255, 255, 255, 0.4);
+
+			@media all and (min-width: $lg) {
+				font-size: 28px;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			min-height: 210px;
+			font-size: 28px;
 		}
 	}
 
@@ -121,10 +139,15 @@
 	border: 0;
 	border-style: none;
 	background-color: transparent;
-	width: 52px;
-	height: 52px;
+	width: 30px;
+	height: 30px;
 	padding: 0;
 	transition: opacity ease $tr;
+
+	@media all and (min-width: $lg) {
+		width: 52px;
+		height: 52px;
+	}
 
 	span {
 			display: block;

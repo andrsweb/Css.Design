@@ -109,6 +109,18 @@
 	&:hover {
 		opacity: $op;
 	}
+
+	@media all and (min-width: $lg) {
+		font-size: 20px;
+	}
+}
+
+.send-button {
+	padding: 10px 22px;
+
+	@media all and (min-width: $lg) {
+		padding: 18px 28px;
+	}
 }
 
 .form-button {

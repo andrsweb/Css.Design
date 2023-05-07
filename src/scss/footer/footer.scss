@@ -22,7 +22,7 @@
 		color: $white;
 
 		@media all and (min-width: $md) {
-			font-style: 20px;
+			font-size: 20px;
 			line-height: 24px;
 		}
 
@@ -122,7 +122,7 @@
 	}
 
 	@media all and (min-width: $lg) {
-		font-size: 16px;
+		font-size: 20px;
 		order: 4;
 		margin-bottom: 0;
 	}
